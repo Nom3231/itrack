@@ -1,0 +1,138 @@
+.home-container {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Balance Card */
+.balance-card {
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.balance-card.positive {
+  background: #e6f4ea;
+}
+
+.balance-card.negative {
+  background: #fdecea;
+}
+
+.balance-label {
+  margin: 0;
+  color: #555;
+  font-size: clamp(13px, 3.5vw, 15px);
+}
+
+.balance-amount {
+  margin: 8px 0 16px;
+  font-size: clamp(28px, 8vw, 40px);
+}
+
+.balance-amount.green { color: #2e7d32; }
+.balance-amount.red   { color: #c62828; }
+
+/* Summary Row */
+.summary-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 14px;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: clamp(12px, 3.5vw, 14px);
+}
+
+.summary-divider {
+  width: 1px;
+  background: #ddd;
+}
+
+.earn-label  { color: #2e7d32; font-weight: bold; }
+.earn-value  { color: #2e7d32; }
+.expense-label { color: #c62828; font-weight: bold; }
+.expense-value { color: #c62828; }
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: clamp(14px, 4vw, 16px);
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  flex: 1;
+  min-width: 120px;
+  padding: 13px 10px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: clamp(13px, 3.8vw, 15px);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-earn    { background: #2e7d32; }
+.btn-expense { background: #c62828; }
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* View Log Button */
+.log-nav-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: clamp(14px, 4vw, 16px);
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 12px;
+  font-family: sans-serif;
+}
+
+.log-nav-btn:hover {
+  background: #eeeeee;
+}
+
+/* Transaction count */
+.tx-count {
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+  margin: 0;
+}
