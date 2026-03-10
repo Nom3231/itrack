@@ -28,7 +28,7 @@ export default function Log({ transactions, onClearAll }) {
                 <div className="log-date">{t.date}</div>
               </div>
               <span className={`log-amount ${t.type === "earning" ? "earn-value" : "expense-value"}`}>
-                {t.type === "earning" ? "+" : "-"}${t.amount.toFixed(2)}
+                {t.type === "earning" ? "+" : "-"}₦{t.amount.toFixed(2)}
               </span>
             </li>
           ))}
