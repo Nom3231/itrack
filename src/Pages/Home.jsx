@@ -73,7 +73,7 @@ export default function Home({ balance, transactions, onAddTransaction, onNaviga
 
       {/* View Log Button */}
       <button className="log-nav-btn" onClick={() => onNavigate("log")}>
-        <span>📋 View Transaction Log</span>
+        <span>View Transaction Log</span>
         <span>→</span>
       </button>
 
