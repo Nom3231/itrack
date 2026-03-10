@@ -29,17 +29,17 @@ export default function Home({ balance, transactions, onAddTransaction, onNaviga
       <div className={`balance-card ${balance >= 0 ? "positive" : "negative"}`}>
         <p className="balance-label">Current Balance</p>
         <h1 className={`balance-amount ${balance >= 0 ? "green" : "red"}`}>
-          N{balance.toFixed(2)}
+          ₦{balance.toFixed(2)}
         </h1>
         <div className="summary-row">
           <div className="summary-item">
-            <span className="earn-label">↑ Earnings</span>
-            <span className="earn-value">${totalEarnings.toFixed(2)}</span>
+            <span className="earn-label">Earnings</span>
+            <span className="earn-value">₦{totalEarnings.toFixed(2)}</span>
           </div>
           <div className="summary-divider" />
           <div className="summary-item">
-            <span className="expense-label">↓ Expenses</span>
-            <span className="expense-value">${totalExpenses.toFixed(2)}</span>
+            <span className="expense-label">Expenses</span>
+            <span className="expense-value">₦{totalExpenses.toFixed(2)}</span>
           </div>
         </div>
       </div>
