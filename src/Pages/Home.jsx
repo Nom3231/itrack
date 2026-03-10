@@ -29,7 +29,7 @@ export default function Home({ balance, transactions, onAddTransaction, onNaviga
       <div className={`balance-card ${balance >= 0 ? "positive" : "negative"}`}>
         <p className="balance-label">Current Balance</p>
         <h1 className={`balance-amount ${balance >= 0 ? "green" : "red"}`}>
-          ${balance.toFixed(2)}
+          N{balance.toFixed(2)}
         </h1>
         <div className="summary-row">
           <div className="summary-item">
